@@ -1,5 +1,3 @@
-language = document.documentElement.lang
-
 function loadMenu(language) {
     if (language="en"){
         fetch("menu-en.html")
@@ -32,3 +30,4 @@ function loadMenu(language) {
         .catch(error => console.error("Error loading footer:", error));
     }
 }
+loadMenu(document.documentElement.lang);
