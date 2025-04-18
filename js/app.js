@@ -11,34 +11,6 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-fetch("menu-en.html")
-.then(response => response.text())
-.then(data => {
-    document.getElementById("menu-en").innerHTML = data;
-})
-.catch(error => console.error("Error loading menu:", error));
-
-fetch("menu-el.html")
-.then(response => response.text())
-.then(data => {
-    document.getElementById("menu-el").innerHTML = data;
-})
-.catch(error => console.error("Error loading menu:", error));
-
-fetch("footer-en.html")
-.then(response => response.text())
-.then(data => {
-    document.getElementById("footer-en").innerHTML = data;
-})
-.catch(error => console.error("Error loading footer:", error));
-
-fetch("footer-el.html")
-.then(response => response.text())
-.then(data => {
-    document.getElementById("footer-el").innerHTML = data;
-})
-.catch(error => console.error("Error loading footer:", error));
-
 particlesJS('particles-js',
   
   {
