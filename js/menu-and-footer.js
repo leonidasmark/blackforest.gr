@@ -14,14 +14,14 @@ if (document.documentElement.lang="en"){
     .catch(error => console.error("Error loading footer:", error));
 }
 else if (document.documentElement.lang="el"){
-    fetch("menu-el.html")
+    fetch("el/menu-el.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById("menu-el").innerHTML = data;
     })
     .catch(error => console.error("Error loading menu:", error));
 
-    fetch("footer-el.html")
+    fetch("el/footer-el.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById("footer-el").innerHTML = data;
